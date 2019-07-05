@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     /*Homework 2.60 - return an unsigned value in which byte i of arg x has been replaced by byte b
     testhw2_60();*/
     
-    //Homework 2.61 - bitwise practice
+    /*//Homework 2.61 - bitwise practice*******************************************
     int x = 0xFFFFFFFF;
     int result;
     
@@ -31,8 +31,11 @@ int main(int argc, char *argv[])
     printf("%d\n", result);
     
     //D. Any bit in the most significant byte of x equals 0.
+    //set all bits to 1, shift high order byte using logical shift (casting to u), so 
+    //that high byte is 0. flip the bits and mask x with high order byte, return the
+    //negation because we want the expression to be true when high order byte is 0.
     result = !(x & (~(~0u >> 8)));
-    printf("%d",result);
+    printf("%d",result);**********************************************************/
     
     while(1);
     return 0;
