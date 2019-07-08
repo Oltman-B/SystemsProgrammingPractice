@@ -2,6 +2,7 @@
 //#include "EndianTest.cpp"
 //#include "hw2-59_byte_concat.cpp"
 //#include "hw2-60_replace_byte.cpp"
+#include "hw2-62_arithmetic_shift_test.cpp"
 
 
 int main(int argc, char *argv[])
@@ -36,6 +37,9 @@ int main(int argc, char *argv[])
     //negation because we want the expression to be true when high order byte is 0.
     result = !(x & (~(~0u >> 8)));
     printf("%d",result);**********************************************************/
+    
+    /*Homework 2.62 arithmetic right shift test*/
+    arithmetic_shift_test();
     
     while(1);
     return 0;
