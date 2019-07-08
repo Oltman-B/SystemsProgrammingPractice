@@ -18,4 +18,3 @@ void arithmetic_shift_test()
 {
     printf("Does this machine use arithmetic right shift? : %d\n", int_shifts_are_arithmetic());
 }
-
